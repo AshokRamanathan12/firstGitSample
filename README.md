@@ -1,0 +1,2 @@
+# firstGitSample
+Testing GIT commit
