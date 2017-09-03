@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Resources</h2>
+    <ul>
+        <li>HTML5_for_Web_Designers - By Jermey Keith</li>
+        <li>Interaction of Colors - Josef Albers</li>
+        <li>https://hackdesign.org/lessons - Web Design Color</li>
+        <li>GRATISOGRAPHY - Website for pictures</li>
+        <li>https://color.adobe.com/ - Colors</li>
+    </ul>
+    <h2>Inspiration</h2>
+    <ul>
+        <li>Land Book: http://land-book.com/</li>
+        <li>SiteInspire: http://www.siteinspire.com/</li>
+        <li>Call-to-idea: http://www.calltoidea.com/</li>
+        <li>Coolors: https://coolors.co/ - Color Palatte</li>
+    </ul>
+    <h2>Fonts</h2>
+    <ul>
+        <li>https://fonts.google.com/</li>
+    </ul>
+    <h2>Display Type</h2>
+    <p>HTML (Hypertext Markup Language) elements are usually either "block-level" elements or "inline" elements.</p>
+    <ul>
+        <li>Block level elements</li>
+        <li>Inline elements - https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements</li>
+        <li>Inline-block elements { Img, buttons }</li>
+        <li>Other types are display:table and display:none</li>
+    </ul>
+    <p>A block-level element occupies the entire space of its parent element (container), thereby creating a "block." This article helps to explain what this means.</p>
+    <p>Browsers typically display the block-level element with a newline both before and after the element. You can visualize them as a stack of boxes.</p>
+    <p>In HTML, inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.</p>
+    <p>Generally, inline elements may contain only data and other inline elements. You can't put block elements inside inline elements.</p>
+    <h2>HTML5 Content type</h2>
+    <ul>
+        <li>Metadata content</li>
+        <li>Flow content</li>
+        <li>Sectioning Content</li>
+        <li>Heading Content</li>
+        <li>Phrasing Content</li>
+        <li>Embedded Content</li>
+        <li>Interactive Content</li>
+        <li>Palpable Content</li>
+        <li>Form Associate Content</li>
+    </ul>
+    <p>https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories</p>
+    <h2>New Major HTML5 tags</h2>
+    <ul>
+        <li>header</li>
+        <li>section</li>
+        <li>main (content section goes in here)</li>
+        <li>article</li>
+        <li>side</li>
+        <li>aside</li>
+        <li>nav</li>
+        <li>figure</li>
+        <li>footer</li>
+        <li></li>
+        <li>Search Engines understand these well</li>
+    </ul>
+    <h2>CSS Selectors</h2>
+    <ul>
+        <li>ul li - All li's under ul</li>
+        <li>ul>li - All direct childs of ul</li>
+        <li>ul+li - Only first li under ul's``</li>
+    </ul>
+    <pre>
+        ========================
+        Selector stacking
+        
+        a, strong {
+          color: red;
+        }
+        
+        
+        ========================
+        All Selector
+        
+        * {
+          margin: 0;
+        }
+        
+        
+        
+        ========================
+        Descendant Selector
+        
+        li a {
+          color: red;
+        }
+        
+        li li a {
+          color: red;
+        }
+        
+        
+        
+        
+        ========================
+        Direct Descendant Selector
+        
+        ( youtube doesn't allow brackets in the description. )
+        
+        .container (greater-than) ul {  
+          border: 4px solid red;  
+        } 
+        
+        
+        
+        ========================
+        Adjacent Selector
+        
+        ul + p {  
+           color: red;  
+        }
+        
+        
+        
+        ========================
+        Sibling Combinator
+        
+        ul ~ p {  
+           color: red;  
+        }
+        
+        
+        
+        ========================
+        Pseudo Classes
+        
+        a:hover { text-decoration: none; }
+        textarea:focus {border-color: blue}
+        
+        
+        ========================
+        Put it together...
+        
+        .peeka:hover + .boo {
+         display: block;
+        }
+        
+        
+        
+        ========================
+        nth selector
+        
+        p:first-child
+        p:last-of-type
+        p:nth-child(3)
+        p:nth-child(odd)
+        p:nth-child(3n)
+        
+    </pre>
+    <h2>CSS Tricks</h2>
+    <ul>
+        <li>display:none; hides the element</li>
+    </ul>
+    <h2>CSS Specificity</h2>
+    <ul>
+        <li>Inline > Id > Class > Tag (always) </li>
+        <li>Selector with 1 tag = 1pt; </li>
+        <li>Selector with n tags = n pts </li>
+        <li>Selector with 1 class = 10pts</li>
+        <li>Selector with 1 id selector = 100pts</li>
+        <li>Selector with 1 inline selector = 1000pts</li>
+        <li>Please dont think that 11 tags will be grater than 1 class. It s just of comparison.</li>
+        <li>Always Class > how many ever tags and so on to others also</li>
+        <li>https://specificity.keegan.st/ - Specificity calculator</li>
+    </ul>
+    <h2>CSS Modules</h2>
+    <ul>
+        <li>Selectors</li>
+        <li>Box Models</li>
+        <li>Backgrounds and Borders</li>
+        <li>Text Effects</li>
+        <li>Transformations</li>
+        <li>Animations</li>
+    </ul>
+    <h2>Preprocessor</h2>
+    <ul>
+        <li>imports - Make css files as one file</li>
+        <li>Nesting</li>
+        <li>Mixins - Very useful for cross browser compatibility</li>
+        <li>functions</li>
+        <li>math</li>
+        <li>My recommandation oder: SCSS (A version by SASS as people are comrtable with CSS), LESS</li>
+    </ul>
+    <h2>CSS Inspiration</h2>
+    <ul>
+        <li>https://web-design-weekly.com/screencasts/</li>
+        <li>https://css-tricks.com/author/chriscoyier/</li>
+        <li>https://tympanus.net/codrops/collective/collective-237/</li>
+        <li></li>
+    </ul>
+    <h2>CSS Positioning</h2>
+    <ul>
+        <li>static : default for all elements : all directions : auto | Doesnt move even if you change</li>
+        <li>relative: Leaves the gap in the place even after it is moved.i.e. Flow of dom respected. Relative to its dom position</li>
+        <li>absolute: As soon as you put its out of dom. Relative to nearest parent. Parent is declared Relative. Can stretch.</li>
+        <li>fixed: not eben respect dom. Fixed to screen</li>
+    </ul>
+</body>
+</html>
